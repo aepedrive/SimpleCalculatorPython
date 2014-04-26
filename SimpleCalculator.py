@@ -19,7 +19,7 @@ root = Tk()
 root.title("Mini Calc")
 #root.geometry('150x280')
 
-txt = Label(root, bg='cyan', text='0', justify='left')
+txt = Label(root, bg='cyan', text='0', anchor=E)
 txt.grid(row=0, column=0, columnspan=4, sticky=EW)
 
 calc_buttons = ['7','8','9','/',
@@ -35,3 +35,4 @@ for i, v in enumerate(calc_buttons):
 
 
 root.mainloop()
+
